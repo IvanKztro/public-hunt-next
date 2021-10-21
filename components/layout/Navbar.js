@@ -2,7 +2,7 @@ import React, {useContext, useState} from 'react';
 import Link from 'next/link'
 import Router from 'next/router';
 
-import {FirebaseContext} from '../../firebase';
+import {FirebaseContext} from '../../firebase/index';
 
 
 const Navbar = () => {

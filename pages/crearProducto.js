@@ -5,8 +5,8 @@ import Router, {useRouter} from 'next/router'
 import FileUploader from 'react-firebase-file-uploader'
 
 //importa el  index.js dentro de la carpeta firebase
-import firebase from '../firebase'
-import {FirebaseContext} from '../firebase'
+//import firebase from '../firebase'
+import firebase, {FirebaseContext} from '../firebase/index'
 
 //validaciones
 import useValidacion from '../hooks/useValidacion'

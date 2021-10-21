@@ -13,11 +13,11 @@ import validarRegistro from '../validacion/validarRegistro'
 
 
 const STATE_INCIAL = {
-    nombre: '',
-    apellidos: '',
-    email: '',
-    password: '',
-    password2: ''
+    nombre: 'pedro',
+    apellidos: 'robles',
+    email: 'pedro@gmail.com',
+    password: '1234567',
+    password2: '1234567'
 };
 
 const Registro = () => {
@@ -30,9 +30,18 @@ const Registro = () => {
     const {nombre, apellidos, email, password, password2} = valores;
 
     async function crearCuenta () {
-        //console.log("Creando cuenta");
+            console.log("Creando cuenta");
         try {
+            console.log(nombre);
+            console.log(email);
+            console.log(password);
+            console.log(firebase)
+            console.log(firebase.constructor)
+            // console.log(firebase.registrar())
+
             await firebase.registrar(nombre, apellidos, email, password);
+            console.log("Creando cuenta");
+
             Router.push('/');
         } catch (error) {
             setError(error.message);
@@ -50,7 +59,7 @@ const Registro = () => {
             <div className="d-flex justify-content-center  ">
             
                 <Formulario className="col-lg-5 mt-3 ">
-                <h3 className="text-center">Crear Cuenta</h3>
+                <h3 className="text-center">Crear Cuenta prueba</h3>
                     <form onSubmit={handleSubmit}>
                         {
                             error && <p className=" mt-1 text-center error">{error}</p>

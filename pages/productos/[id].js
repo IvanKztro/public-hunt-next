@@ -1,6 +1,6 @@
 import React, {useEffect, useContext, useState} from 'react';
 import {useRouter, Router} from 'next/router';
-import {FirebaseContext} from '../../firebase'
+import {FirebaseContext} from '../../firebase/index'
 import Layout from '../../components/layout/Layout'
 import styled from '@emotion/styled';
 import formatDistanceToNow from 'date-fns/formatDistanceToNow';
